@@ -12,9 +12,16 @@ include '../config/conexao.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Fornecedores</title>
     <style>
+        body {
+            background-color: #f5f5f5; 
+        }
         #login-container {
             width: 960px;
             margin: 35px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
         .form-group input {
@@ -66,8 +73,13 @@ include '../config/conexao.php';
                         </div>
                         <br>
                         <div class="form-group">
-                            <select id="pais" name="pais" class="form-control" readonly placeholder="Pais">
-                                <option value="Brazil" selected>Brasil</option>
+                            <select id="pais" name="pais" class="form-control" readonly>
+                                <option value="">Selecione o País</option>
+                                <option value="Brasil" selected>Brasil</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Uruguai">Uruguai</option>
+                                <option value="Outros">Outros</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -103,8 +115,35 @@ include '../config/conexao.php';
                         </div>
                         <br>
                         <div class="form-group">
-                            <select id="Estado" name="estado" class="form-control" readonly placeholder="Estado">
-                                <option value="Municipio" selected>Estado</option>
+                            <select id="Estado" name="estado" class="form-control" readonly>
+                                <option value="" selected>Selecione o Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
                             </select>
                         </div>
                         <div class="form-group">
